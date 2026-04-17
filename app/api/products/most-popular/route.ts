@@ -1,6 +1,9 @@
 import { NextResponse } from 'next/server'
 import { API_BASE_URL } from '@/lib/api-config'
 
+export const dynamic = 'force-dynamic'
+
+
 const API_BASE = API_BASE_URL
 const base = API_BASE.endsWith('/api') ? API_BASE : `${API_BASE.replace(/\/$/, '')}/api`
 
